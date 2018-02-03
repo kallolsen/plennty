@@ -1,0 +1,49 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-grid>
+        <br>
+        <br>
+        <ion-row>
+          <ion-col text-center>
+            <ion-icon name="log-in" style="zoom:6.0;"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list inset>
+                <ion-item>
+                  <ion-label floating>Email</ion-label>
+                  <ion-input type="text" [(ngModel)]="useremail"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label floating>Password</ion-label>
+                  <ion-input type="password" [(ngModel)]="userpassword"></ion-input>
+                </ion-item>
+                <br>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button (click)="login()">Login</button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center>
+            <p>Not yet registered?</p>
+            <button ion-button clear (click)="goToRegisterPage()">Register Now</button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

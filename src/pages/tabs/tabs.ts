@@ -1,7 +1,9 @@
+import { NavParams } from 'ionic-angular';
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { ProfilePage } from './../profile/profile';
+import { GoalsPage } from '../goals/goals';
+import { TrackPage } from '../track/track';
 import { HomePage } from '../home/home';
 
 @Component({
@@ -10,10 +12,15 @@ import { HomePage } from '../home/home';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab2Root = GoalsPage;
+  tab3Root = TrackPage;
+  tab4Root = ProfilePage;
+  tabParams = {};
+  uid: string;
 
-  constructor() {
-
+  constructor(public navParams: NavParams) {
+    this.uid = this.navParams.get('userid');
+    console.log(this.uid);
+    this.tabParams = { id: this.uid };
   }
 }

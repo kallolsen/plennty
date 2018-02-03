@@ -1,0 +1,55 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Register</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+    <ion-grid>
+      <br>
+      <ion-row>
+        <ion-col text-center>
+          <ion-icon name="person-add" style="zoom:6.0;"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+              <ion-item>
+                <ion-label >Name</ion-label>
+                <ion-input type="text" [(ngModel)]="username"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label >Phone</ion-label>
+                <ion-input type="text" [(ngModel)]="userphone"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label >Email</ion-label>
+                <ion-input type="text" [(ngModel)]="useremail"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label >Password</ion-label>
+                <ion-input type="password" [(ngModel)]="userpassword"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label >Activation Code</ion-label>
+                <ion-input type="text" [(ngModel)]="activationcode"></ion-input>
+              </ion-item>
+              <br>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button (click)="register()">Register</button>
+        </ion-col>
+      </ion-row>    
+    </ion-grid>
+  
+  </ion-content>
+  
