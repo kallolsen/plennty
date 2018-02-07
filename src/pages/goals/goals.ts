@@ -1,3 +1,6 @@
+import { BuildwealthPage } from './../buildwealth/buildwealth';
+import { CreditcardsPage } from './../creditcards/creditcards';
+import { DailybudgetPage } from './../dailybudget/dailybudget';
 import { LoginPage } from './../login/login';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthProvider } from './../../providers/auth/auth';
@@ -20,6 +23,16 @@ export class GoalsPage {
     this.navCtrl.setRoot(LoginPage);
   }
 
-  
+  gotoDailyBudget() {
+    this.navCtrl.push(DailybudgetPage);
+  }
+
+  gotoCreditCards() {
+    this.navCtrl.push(CreditcardsPage);
+  }
+
+  gotoBuildWealth() {
+    this.navCtrl.push(BuildwealthPage);
+  }
 
 }

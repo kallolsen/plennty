@@ -1,3 +1,6 @@
+import { BuildwealthPage } from './../pages/buildwealth/buildwealth';
+import { CreditcardsPage } from './../pages/creditcards/creditcards';
+import { DailybudgetPage } from './../pages/dailybudget/dailybudget';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -24,6 +27,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
+    DailybudgetPage,
+    CreditcardsPage,
+    BuildwealthPage,
     ProfilePage,
     GoalsPage,
     TrackPage,
@@ -43,6 +49,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    DailybudgetPage,
+    CreditcardsPage,
+    BuildwealthPage,
     ProfilePage,
     GoalsPage,
     TrackPage,

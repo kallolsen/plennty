@@ -11,6 +11,33 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="card-background-page">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/imgs/daily-budget.jpg" (click)="gotoDailyBudget()"/>
+          <div class="card-title">Daily Budget Challenge</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/imgs/credit-cards.jpg" (click)="gotoCreditCards()"/>
+          <div class="card-title">Manage Credit Cards</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/imgs/build-wealth.jpg" (click)="gotoBuildWealth()"/>
+          <div class="card-title">Build Wealth</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
